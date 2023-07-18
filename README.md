@@ -1,4 +1,4 @@
-## ♦️ Desafio  01 - Projeto Final
+## ♦️ Desafio  01 -
 Esse repositório foi criado especialmente para o Estágio de React Native em AWS Cloud Context da Compass.uol🧭. Aqui estarão presentes arquivos do Projeto feito na Week 04.
 
 # ♦️ Pré-Requisitos
