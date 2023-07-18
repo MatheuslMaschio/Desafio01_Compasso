@@ -1,4 +1,3 @@
-
 interface Publication {
   id_Publication: number;
   title: string;
@@ -7,7 +6,7 @@ interface Publication {
 }
 
 function getRenderPublication (){
-  const Publication: Publication[] = [
+  const publications: Publication[] = [
     {
       id_Publication: 1,
       title: "Post 1",
@@ -74,7 +73,7 @@ function getRenderPublication (){
   
   if (lerDados){
     lerDados.innerHTML = ''; 
-    Publication.map((publication) => {
+    publications.map((publication) => {
       const publicationItem = document.createElement("div");
       publicationItem.className = "card";
       publicationItem.innerHTML = 

@@ -4,13 +4,12 @@ interface Publication {
     image: string;
     body: string;
 }
-
 interface Comments {
     postId: number;
     comments: {commentId: number,name: string, email:string, body: string}[];
 }  
 
-const Publication: Publication[] = [
+const publications: Publication[] = [
     {
         id_Publication: 1,
         title: "Post 1",
@@ -71,7 +70,7 @@ const Publication: Publication[] = [
         image: "/images/postImage.png",
         body: "Pellentesque eleifend, sem in cursus fringilla, nisi mi feugiat mauris, vitae eleifend erat velit at libero. Duis scelerisque, dolor in tincidunt scelerisque, lectus ligula iaculis enim, sit amet convallis nulla sapien vel risus. Nulla facilisi. Nunc eu congue sem, eget consequat lectus. Nulla ac erat aliquam, semper quam at, euismod ex. Vivamus rhoncus ligula mi, at facilisis sapien tincidunt quis. Ut vel mauris iaculis, egestas justo id, suscipit odio. Cras laoreet neque vel metus fringilla, et tincidunt erat cursus. Maecenas cursus volutpat ipsum, nec pellentesque dui aliquam eu. Etiam tristique justo ut auctor tempus."
     }
-    ];
+];
 
 const comment: Comments[] = [
     {
@@ -362,9 +361,9 @@ function renderPostDetails() {
     const id = urlParams.get("id") as string;
     console.log(id); 
 
-    const filterPostById = Publication.find(
-    
-    (publication) => publication.id_Publication === parseInt(id, 10)
+    const filterPostById = publications.find(
+
+        (publication) => publication.id_Publication === parseInt(id, 10)
     );
 
     const RenderDetails = document.querySelector("#card");

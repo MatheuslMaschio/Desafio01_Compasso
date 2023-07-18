@@ -1,21 +1,4 @@
-interface Publication {
-    id_Publication: number;
-    title: string;
-    image: string;
-    body: string;
-}
-
-interface Comments {
-    postId: number;
-    comments: {
-        commentId: number,
-        name: string, 
-        email:string, 
-        body: string
-    }[];
-} 
-
-export const publications: Publication[] = [
+export const publications = [
     {
         id_Publication: 1,
         title: "Post 1",
@@ -77,12 +60,10 @@ export const publications: Publication[] = [
         body: "Pellentesque eleifend, sem in cursus fringilla, nisi mi feugiat mauris, vitae eleifend erat velit at libero. Duis scelerisque, dolor in tincidunt scelerisque, lectus ligula iaculis enim, sit amet convallis nulla sapien vel risus. Nulla facilisi. Nunc eu congue sem, eget consequat lectus. Nulla ac erat aliquam, semper quam at, euismod ex. Vivamus rhoncus ligula mi, at facilisis sapien tincidunt quis. Ut vel mauris iaculis, egestas justo id, suscipit odio. Cras laoreet neque vel metus fringilla, et tincidunt erat cursus. Maecenas cursus volutpat ipsum, nec pellentesque dui aliquam eu. Etiam tristique justo ut auctor tempus."
     }
 ];
-
-export const comment: Comments[] = [
+export const comment = [
     {
         postId: 1,
-        comments: 
-        [
+        comments: [
             {
                 commentId: 3,
                 name: "John Doe",
@@ -98,7 +79,7 @@ export const comment: Comments[] = [
             {
                 commentId: 5,
                 name: "Alice Johnson",
-                email: "alice.johnson@example.com", 
+                email: "alice.johnson@example.com",
                 body: "Aenean mollis lorem a fringilla vulputate. Nulla ultrices orci et felis tincidunt."
             },
             {
@@ -109,11 +90,9 @@ export const comment: Comments[] = [
             },
         ],
     },
-    
     {
         postId: 2,
-        comments: 
-        [
+        comments: [
             {
                 commentId: 3,
                 name: "Sarah Williams",
@@ -134,11 +113,9 @@ export const comment: Comments[] = [
             },
         ],
     },
-
     {
         postId: 3,
-        comments: 
-        [
+        comments: [
             {
                 commentId: 3,
                 name: "David Taylor",
@@ -159,11 +136,9 @@ export const comment: Comments[] = [
             },
         ],
     },
-
     {
         postId: 4,
-        comments: 
-        [
+        comments: [
             {
                 commentId: 3,
                 name: "William Lee",
@@ -182,7 +157,6 @@ export const comment: Comments[] = [
                 email: "sophia.white@example.com",
                 body: "Vivamus et orci vel turpis egestas euismod."
             },
-
             {
                 commentId: 6,
                 name: "Oliver Lewis",
@@ -191,11 +165,9 @@ export const comment: Comments[] = [
             },
         ],
     },
-
     {
         postId: 5,
-        comments: 
-        [
+        comments: [
             {
                 commentId: 3,
                 name: "David Taylor",
@@ -216,11 +188,9 @@ export const comment: Comments[] = [
             },
         ],
     },
-
     {
         postId: 6,
-        comments: 
-        [
+        comments: [
             {
                 commentId: 3,
                 name: "John Doe",
@@ -236,7 +206,7 @@ export const comment: Comments[] = [
             {
                 commentId: 5,
                 name: "Alice Johnson",
-                email: "alice.johnson@example.com", 
+                email: "alice.johnson@example.com",
                 body: "Aenean mollis lorem a fringilla vulputate. Nulla ultrices orci et felis tincidunt."
             },
             {
@@ -249,8 +219,7 @@ export const comment: Comments[] = [
     },
     {
         postId: 7,
-        comments: 
-        [
+        comments: [
             {
                 commentId: 3,
                 name: "Sarah Williams",
@@ -271,11 +240,9 @@ export const comment: Comments[] = [
             }
         ]
     },
-
     {
-        postId:8,
-        comments: 
-        [
+        postId: 8,
+        comments: [
             {
                 commentId: 3,
                 name: "William Lee",
@@ -294,7 +261,6 @@ export const comment: Comments[] = [
                 email: "sophia.white@example.com",
                 body: "Vivamus et orci vel turpis egestas euismod."
             },
-
             {
                 commentId: 6,
                 name: "Oliver Lewis",
@@ -303,9 +269,8 @@ export const comment: Comments[] = [
             },
         ]
     },
-
     {
-        postId:9,
+        postId: 9,
         comments: [
             {
                 commentId: 3,
@@ -327,9 +292,8 @@ export const comment: Comments[] = [
             },
         ]
     },
-
     {
-        postId:10,
+        postId: 10,
         comments: [
             {
                 commentId: 3,
@@ -346,7 +310,7 @@ export const comment: Comments[] = [
             {
                 commentId: 5,
                 name: "Alice Johnson",
-                email: "alice.johnson@example.com", 
+                email: "alice.johnson@example.com",
                 body: "Aenean mollis lorem a fringilla vulputate. Nulla ultrices orci et felis tincidunt."
             },
             {
@@ -357,5 +321,5 @@ export const comment: Comments[] = [
             },
         ]
     }
-
-];    
+];
+//# sourceMappingURL=data.js.map
