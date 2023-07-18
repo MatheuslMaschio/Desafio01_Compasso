@@ -35,25 +35,30 @@ header h1 {
     margin-top: 70px;
     width: 100%;
     display: flex;
-    
     justify-content: center;
     align-items: center
 }
 
 
 .card {
-    width: 771px;
-    height: 519px;
+    /* width: 95%;
+    max-width: 771px;
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* padding-bottom: 60px; */
+    /* box-sizing: border-box; */
+    /* border-radius: 8px; */
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */ 
+
+    width:95%;
     padding-bottom: 60px;
-    box-sizing: border-box;
+    max-width: 771px;
     border-radius: 8px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.post_content-content {
+.post_content {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -64,7 +69,7 @@ header h1 {
 .post_image{
     width: 100%;
     height: 311.4px;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 
@@ -77,32 +82,34 @@ header h1 {
     font-weight: 300;
     font-style: italic;
     color:  #575757;
-    margin-left:54px ;
+    padding-left:54px ;
+    padding-right: 40px;
+    padding-bottom: 20px;
 }
 
 .post_content h2{ 
     color: #3a4f9a;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 19.92px;
     font-weight: 500 ;
     font-size: 20px;
-    margin-left:54px ;
+    padding-left:54px ;
 }
 
 
 .card-comment {
+    box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     margin: 0 auto;
     margin-top: 70px;
-    justify-content: center;
-    align-items:center;   
-    width: 762px;
-    height: 321px;
+    justify-content: left;
+    align-items:left;   
+    max-width: 771px;
+    width: 95%;
     padding-left: 54px;
     background-color: #FFFFFF;
-    justify-content: center;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    box-sizing: border-box;
     padding-right: 54px;
 
 }
@@ -134,11 +141,15 @@ li{
     height: 75px;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon-btn{
     width: 49px;
     height: 49px;
 }
+
 
 

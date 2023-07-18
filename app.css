@@ -40,6 +40,7 @@ main {
 .header h1 {
   color: white;
   margin-left: 1px;
+  font-weight: bold;
 }
 
 .header img {
@@ -66,6 +67,19 @@ main {
   width: 100%;
   background: #3A4F9A;
   height: 3px;
+}
+
+.expand {
+  margin-left: auto;
+  text-decoration: none;
+  color: #3A4F9A;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .card-container {
@@ -103,6 +117,8 @@ main {
   gap: 15px;
   padding: 20px;
   text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 .post_content p {
@@ -113,14 +129,9 @@ main {
   -webkit-box-orient: vertical;
 }
 
-.post_content a {
-  margin-left: auto;
-  text-decoration: none;
-  color: #3A4F9A;
-  font-weight: 700;
-  font-size: 13px;
-}
 h2 {
   color: #3A4F9A;
+  font-size: 20px;
+  font-weight: 500;
 }
 
